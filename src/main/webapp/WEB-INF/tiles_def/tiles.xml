@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="common" template="/WEB-INF/views/layouts/main.jsp">
+    <put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
+  </definition>
+  
+  <definition name="home" extends="common">
+	 <put-attribute name="title" value="Tiles tutorial homepage" />
+	  <put-attribute name="body" value="/WEB-INF/views/public/home.jsp" /> 
+  </definition>
+  
+  <definition name="login" extends="common">
+	 <put-attribute name="title" value="Tiles tutorial login" />
+	  <put-attribute name="body" value="/WEB-INF/views/public/login.jsp" /> 
+  </definition>
+  
+   <definition name="home-user" extends="common">
+	 <put-attribute name="title" value="Tiles tutorial user page" />
+	  <put-attribute name="body" value="/WEB-INF/views/private/home-user.jsp" /> 
+  </definition>
+  
+   <definition name="home-admin" extends="common">
+	 <put-attribute name="title" value="Tiles tutorial admin page" />
+	  <put-attribute name="body" value="/WEB-INF/views/private/home-admin.jsp" /> 
+  </definition>
+  
+</tiles-definitions>
